@@ -69,3 +69,45 @@ h2 {
     100% {background-color: blue; width: 99%; font-size: 2rem;}
        
 }
+
+a {
+    
+}
+
+.btn {
+    text-decoration: none;
+    display: flex;
+    width: 350px;    
+    color: aliceblue;
+    padding: 16px 32px;
+    font-size: 1.5rem;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.50);
+}
+
+.btn-doar {
+    display: inline-block;
+    background-color: #d45555;    
+    transition: background-color 2s, width 1s ease-in; 
+    text-align: center;  
+}
+
+.btn-doar::after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f004";
+    color: #fff;
+    margin-left: 16px;
+    position: relative;
+    left: 60px;
+    opacity: 0;
+    transition: left 1s ease-out, opacity 1s ease;
+}
+
+.btn-doar:hover {
+    background-color: red;
+    width: 380px;
+}
+
+.btn-doar:hover::after {    
+    left: 0;
+    opacity: 1;
+}
